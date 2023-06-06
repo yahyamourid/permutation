@@ -73,7 +73,7 @@ const Profil = ({ handleLoginDrawer, loggedInUser, token }) => {
   const handleDelete = async () => {
     try {
 
-      const response = await fetch(`https://troubled-red-garb.cyclic.app/professeurs/${professeur.professor.email}`, {
+      const response = await fetch(`https://tiny-worm-nightgown.cyclic.app/professeurs/${professeur.professor.email}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${tokenprof}`,
@@ -122,7 +122,7 @@ const Profil = ({ handleLoginDrawer, loggedInUser, token }) => {
     if (validateFields()) {
 
       try {
-        const response = await fetch('https://troubled-red-garb.cyclic.app/professeurs', {
+        const response = await fetch('https://tiny-worm-nightgown.cyclic.app/professeurs', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

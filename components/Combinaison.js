@@ -16,7 +16,7 @@ const Combinaison = () => {
   useEffect(() => {
     const fetchProfesseurs = async () => {
       try {
-        const response = await axios.get('https://troubled-red-garb.cyclic.app/professeurs');
+        const response = await axios.get('https://tiny-worm-nightgown.cyclic.app/professeurs');
         const filteredProfesseurs = response.data.filter(professeur => professeur.specialite === specialite);
         setProfesseurs(filteredProfesseurs);
         generateRelations(filteredProfesseurs);

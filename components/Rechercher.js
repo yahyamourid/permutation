@@ -16,7 +16,7 @@ const Rechercher = () => {
   useEffect(() => {
     const fetchProfesseurs = async () => {
       try {
-        const response = await axios.get('https://troubled-red-garb.cyclic.app/professeurs');
+        const response = await axios.get('https://tiny-worm-nightgown.cyclic.app/professeurs');
         setProfesseurs(response.data);
         setLoading(false);
       } catch (error) {

@@ -11,14 +11,14 @@ const LoginScreen = ({ handleLoginDrawer, setToken }) => {
   const handleLogin = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.post('https://troubled-red-garb.cyclic.app/login', {
+      const response = await axios.post('https://tiny-worm-nightgown.cyclic.app/login', {
         email,
         password,
       });
 
       const { message, token } = response.data;
       if (message === 'Authentication successful') {
-        const professorsResponse = await axios.get('https://troubled-red-garb.cyclic.app/professeurs');
+        const professorsResponse = await axios.get('https://tiny-worm-nightgown.cyclic.app/professeurs');
         const professorsData = professorsResponse.data;
         const professor = professorsData.find((prof) => prof.email === email);
         if (professor) {
